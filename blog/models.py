@@ -30,4 +30,4 @@ class Man(models.Model):
     wife = models.BooleanField(default=False, verbose_name='Жена')
 
     def __str__(self):
-        return self.name
+        return self.surname
