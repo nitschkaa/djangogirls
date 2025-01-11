@@ -1,3 +1,14 @@
-# Project exclude paths
-/.venv/
-/myvenv/
+myenv/
+*.pyc
+media/
+celerybeat-schedule
+celerybeat.*
+*.log
+node_modules
+file.py
+file2.py
+settings_local.py
+_project_/static
+.idea
+*.DS_Store
+db.sqlite3
