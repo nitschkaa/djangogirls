@@ -10,6 +10,8 @@ class Post(models.Model):
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
     review = models.TextField(blank=True)
+    photo = models.FileField(upload_to="photos/", null=True)
+
 
     def publish(self):
         self.published_date = timezone.now()
